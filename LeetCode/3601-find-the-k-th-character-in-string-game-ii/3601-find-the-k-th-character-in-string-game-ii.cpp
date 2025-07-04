@@ -24,3 +24,17 @@ public:
         
     }
 };
+
+
+
+ int i = 0;
+        int cnt = 0;
+        k--;
+        while (k) {
+            if (k&1) {
+                cnt += operations[i];
+            }
+            k = k >> 1;
+            i++;
+        }
+        return 'a'+(cnt%26);
